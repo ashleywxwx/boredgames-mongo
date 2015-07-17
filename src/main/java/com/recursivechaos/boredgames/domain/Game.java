@@ -1,5 +1,6 @@
 package com.recursivechaos.boredgames.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.data.annotation.Id;
 
 /**
@@ -12,6 +13,7 @@ import org.springframework.data.annotation.Id;
 public class Game {
 
     @Id
+    @JsonIgnore
     private String id;
     private String title;
     private String description;
